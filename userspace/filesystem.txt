@@ -1,0 +1,28 @@
+MOMMY/                          ← la radice, la mamma stessa
+├── HEART/                      ← il cuore pulsante (configurazione globale, init, env)
+│   ├── PULSE                   ← file di stato del kernel (tipo /proc ma più sexy)
+│   ├── RULES                   ← regole di sistema (policy, permessi globali)
+│   └── KISSES                  ← file di log affettuosi (tipo dmesg ma con ❤️)
+├── LAP/                        ← dove mamma ti tiene in braccio (home degli utenti)
+│   ├── [username]/             ← ogni utente ha il suo grembo personale
+│   │   ├── TOYS/               ← binari e programmi dell’utente
+│   │   ├── SECRETS/            ← file privati (tipo ~/.config ma più intimo)
+│   │   └── CUDDLES/            ← cache e file temporanei dell’utente
+│   └── GUEST/                  ← per gli ospiti (limitato, mamma controlla)
+├── CHEST/                      ← il petto di mamma (sistema critico, protetto)
+│   ├── MILK/                   ← librerie condivise (shared libs)
+│   ├── BONES/                  ← kernel e moduli (tipo /boot ma più forte)
+│   └── WHIP/                   ← tool amministrativi e comandi potenti (tipo /sbin)
+├── THIGHS/                     ← dove mamma ti stringe (device e risorse hardware)
+│   ├── KEYS/                   ← tastiera, mouse, input
+│   ├── EYES/                   ← display, framebuffer, GPU
+│   └── VOICE/                  ← seriale, audio, output
+├── BELLY/                      ← la pancia morbida (file temporanei e variabili)
+│   ├── TUMMYACHES/             ← log e crash report (tipo /var/log)
+│   └── SNACKS/                 ← cache e download temporanei
+├── BACKPACK/                   ← dove mamma mette le cose condivise (tipo /usr/share)
+│   ├── STORIES/                ← documentazione e man pages
+│   └── TREASURES/              ← app e giochi condivisi
+└── NAUGHTY/                    ← zona proibita (solo root/mamma, tipo /root)
+    ├── WHISPERS/               ← segreti di sistema
+    └── PUNISHMENTS/            ← file di controllo e ban (fail2ban style)

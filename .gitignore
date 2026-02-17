@@ -1,0 +1,7 @@
+target/
+*.bin
+*.iso
+*.o
+qemu.log
+serial.log
+*.log

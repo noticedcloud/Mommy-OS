@@ -1,0 +1,17 @@
+[package]
+name = "msw"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+name = "msw"
+crate-type = ["rlib"]
+
+[[bin]]
+name = "mkmsw"
+path = "src/bin/mkmsw.rs"
+
+[dependencies]
+aes = { version = "0.7.5", features = ["force-soft"] }
+ctr = "0.8.0"
+argon2 = { version = "0.5", default-features = false }

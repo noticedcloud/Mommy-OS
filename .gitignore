@@ -1,0 +1,11 @@
+target/
+*.bin
+*.iso
+*.o
+qemu.log
+serial.log
+*.log
+*.img
+*.mom
+drivers-linux/
+docs/

@@ -5,11 +5,12 @@ Welcome to the most affectionate operating system ever written in Rust. It watch
 
 ## Features ✨
 
-*   **Pings that actually wait for you:** We fixed the timeouts so you don't get ghosted by Google.
-*   **A Filesystem that remembers:** Bitmap PMM ensures we don't accidentally overwrite your `ls` command with network packets (oops).
-*   **MOM Executables:** Because `ELF` is for nerds. We run `.mom` binaries now.
-*   **Zero Comments:** The code explains itself. Or it screams internally. One of the two.
-*   **Unformatted Code:** The code is not formatted because I was lazy and cargo fmt made it explode (NOW FIXED, I THINK).
+*   **Memory Management (The Mommy Way):** We divide RAM into **Kernel**, **Cradle** (safe space), and **Playpen** (where user code can make a mess). If the Playpen gets too full, it might "invade" the Cradle. Yes, we implemented geopolitical conflict in RAM.
+*   **Mommy's Wardrobe (MSW):** A custom 64-bit filesystem with 4KB blocks. It features **Full-Disk Encryption (AES-256)** via Argon2id because Mommy doesn't want you looking at her secrets.
+*   **Networking Stack from Scratch:** Written in pure Rust. We talk to Intel e1000 NICs directly. We have custom ARP, IPv4, UDP, DNS, and ICMP. Our `ping` even calculates latency because we care about how long you've been waiting.
+*   **MOM Executables:** Because `ELF` is for nerds. We run `.mom` binaries (raw position-independent code) with a custom `MOM!` header.
+*   **Zero Comments Policy:** Because if the code was hard to write, it should be hard to read. Mommy doesn't like the one's who steal code.
+*   **Safety First (Mostly):** Built with `#![no_std]` and `#![no_main]`. We handle our own Panics, Page Faults, and General Protection Faults with style.
 
 ## Requirements 🛠️
 
